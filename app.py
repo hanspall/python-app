@@ -86,13 +86,66 @@
 
 # print("Down Payment")
 #=====================mosh solution=======================
-price = 1000000
-has_good_credit = False
-if has_good_credit:
-    down_payment = 0.1 * price
-else:
-    down_payment = 0.2 * price
+# price = 1000000
+# has_good_credit = False
+# if has_good_credit:
+#     down_payment = 0.1 * price
+# else:
+#     down_payment = 0.2 * price
 
-print(f"Down Payment: ${down_payment}")
+# print(f"Down Payment: ${down_payment}")
+
+#================================Logic Operators========================================
+###-----AND-------#### /// Both conditoin will be true ///
+# has_high_income = True
+# has_good_credit = False
+
+# if has_high_income and has_good_credit:
+#     print("Eligible for loan")
+
+
+###-----OR------#### /// At Least one condition should be true ///
+# has_high_income = True
+# has_good_credit = False
+
+# if has_high_income or has_good_credit:
+#     print("Eligible for loan")
+
+###----NOT-----#####
+
+#if applicant has good credit and doesn't have a criminal record.
+
+# has_good_credit = True
+# has_criminal_record = False #/True
+
+# if has_good_credit and not has_criminal_record:
+#     print("Eligible for loan")
+
+#=================Comparison Operators==============================
+###------- greater ( > ) ---------------------###
+###------- greater than equal to ( >= ) ------###
+###------- Less Than ( < ) -------------------###
+###------- Less Than Equal to ( <= ) ---------###
+###------- Equality Operater ( == ) ----------###
+###------- Not Equal To ( != ) ---------------###
+
+# temprature = 35
+# if temprature > 30:
+#     print("It's hot day")
+# else:
+#     print("It's not a hot day")
+
+#------------------Excercise_-------------------
+#practice - If name is less than 3 chracters long than print name must be at leat 3 characters
+#otherwise if it's more than 50 characters long than print name can be maximum of 50 characters
+#otherwise name looks good!
+user_name = input("Fill your name: ")
+
+if len(user_name) < 3:
+    print("Name must be atleast 3 characters")
+elif len(user_name) > 50:
+    print("Name can be maximum of 50 characters")
+else:
+    print("name looks good!")
 
 
