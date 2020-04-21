@@ -139,13 +139,14 @@
 #practice - If name is less than 3 chracters long than print name must be at leat 3 characters
 #otherwise if it's more than 50 characters long than print name can be maximum of 50 characters
 #otherwise name looks good!
+
+
 user_name = input("Fill your name: ")
 
 if len(user_name) < 3:
     print("Name must be atleast 3 characters")
 elif len(user_name) > 50:
-    print("Name can be maximum of 50 characters")
+    print("Name must be maximum of 50 characters")
 else:
     print("name looks good!")
-
-
+ 
