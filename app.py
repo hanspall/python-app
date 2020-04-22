@@ -139,13 +139,44 @@
 #practice - If name is less than 3 chracters long than print name must be at leat 3 characters
 #otherwise if it's more than 50 characters long than print name can be maximum of 50 characters
 #otherwise name looks good!
-user_name = input("Fill your name: ")
 
-if len(user_name) < 3:
-    print("Name must be atleast 3 characters")
-elif len(user_name) > 50:
-    print("Name can be maximum of 50 characters")
+
+# user_name = input("Fill your name: ")
+
+# if len(user_name) < 3:
+#     print("Name must be atleast 3 characters")
+# elif len(user_name) > 50:
+#     print("Name must be maximum of 50 characters")
+# else:
+#     print("name looks good!")
+ 
+###------------WHILE---------------------##########
+
+# i = 1
+# while i <= 5:
+#     print(i)
+#     i = i + 1
+# print("Done")
+
+#String mulitplication in while loop
+
+# i = 1
+# while i <=5:
+#     print("*" * i)
+#     i = i + 1
+
+#####-----__Guess Game-----
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess: "))
+    guess_count += 1
+    if guess == secret_number:
+        print("you won !")
+        break
 else:
-    print("name looks good!")
+    print("Sorry you loss!")
 
 
