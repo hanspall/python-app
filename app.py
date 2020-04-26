@@ -84,7 +84,6 @@
 # else:
 #     print((House_price/100) * 20)
 
-# print("Down Payment")
 #=====================mosh solution=======================
 # price = 1000000
 # has_good_credit = False
@@ -118,7 +117,7 @@
 # has_good_credit = True
 # has_criminal_record = False #/True
 
-# if has_good_credit and not has_criminal_record:
+# if has_good_credit and not has_criminal_recoranswerd:
 #     print("Eligible for loan")
 
 #=================Comparison Operators==============================
@@ -153,7 +152,29 @@
 ###------------WHILE---------------------##########
 
 # i = 1
-# while i <= 5:
+# while i <= 5:# Weight_kilogram = input(convert * float(user_wieght_pound))
+# print(Weight_kilogram)
+
+# email = '''
+# Hi Sam,
+
+# We received your request. I will update you once it resolved.
+
+# Thanks
+# The Support Team
+# '''
+# print(email)
+
+# course = 'Python for Begginers'
+# another = course[:]
+# print(course[1:-1])
+
+
+# first = 'Gurpreet'
+# last = 'Singh'
+# msg = f'{first} [{last}] is a coder'
+# print(msg)
+
 #     print(i)
 #     i = i + 1
 # print("Done")
@@ -167,16 +188,96 @@
 
 #####-----__Guess Game-----
 
-secret_number = 9
-guess_count = 0
-guess_limit = 3
-while guess_count < guess_limit:
-    guess = int(input("Guess: "))
-    guess_count += 1
-    if guess == secret_number:
-        print("you won !")
+# secret_number = 9
+# guess_count = 0
+# guess_limit = 3
+# while guess_count < guess_limit:
+#     guess = int(input("Guess: "))
+#     guess_count += 1
+#     if guess == secret_number:
+#         print("you won !")
+#         break
+# else:
+#     print("Sorry you loss!")
+
+##---------Car Game-------------##
+
+# help = '''
+# start - to start the car
+# stop - to stop the car
+# quit - to exit
+# '''
+# start = ("Car Started...Ready to go!")
+# stop = ("Car Stopped")
+
+# input_ask = True
+
+# while input_ask:
+#     command = input()
+#     if command.lower()  == "help":
+#         print(help)
+#     elif command.lower() == "start":
+#         print(start)
+#     elif command.lower() == "stop":
+#         print(stop)
+#     elif command.lower() == "quit":
+#         input_ask = False
+#         break
+#     else:
+#         print("I dont understand")
+
+
+
+limit = 3
+ask_limit = 0
+print("Welcome on SAMO Calculater")
+
+
+while ask_limit < limit:
+    method = input("Give Option Between -Add, -subtract, -Divide, Quit: ") 
+    if method.lower() == "quit":
+        answer = "You Quit"
+        break  
+    elif method.lower() != "add" and method.lower() != "subtract" and method.lower() != "divide":
+        answer = "Invalid Command"
         break
-else:
-    print("Sorry you loss!")
+    first_number = input("First Number: ")
+    second_number = input("Second Number: ")       
+    ask_limit += 1
+    if method.lower() == "add":
+        answer =  input(int(first_number) + int(second_number))
+    elif method.lower() == "subtract":
+        answer =  input(int(first_number) - int(second_number))
+    elif method.lower() == "divide":
+        answer =  input(int(first_number) // int(second_number))  
 
 
+if ask_limit == 3:
+    print("Sorry! Your limit exceeded")
+    member = input("Please enter code for unlimited excess: ")    #//code = buy//
+
+    if member.lower()  == "buy":
+        member_new = True
+        
+        while member_new:
+            method = input("Give Option Between -Add, -subtract, -Divide, Quit: ") 
+            if method.lower() == "quit":
+                answer = "You Quit"
+                break  
+            elif method.lower() != "add" and method.lower() != "subtract" and method.lower() != "divide":
+                answer = "Invalid Command"
+                break        
+            first_number = input("First Number: ")
+            second_number = input("Second Number: ")
+            if method.lower() == "add":
+                answer =  input(int(first_number) + int(second_number))
+            elif method.lower() == "subtract":
+                answer =  input(int(first_number) - int(second_number))
+            elif method.lower() == "divide":
+                answer =  input(int(first_number) // int(second_number))  
+            else:
+                answer = "Invalid Command"
+                break 
+        
+
+print(answer)
